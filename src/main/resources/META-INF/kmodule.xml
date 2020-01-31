@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+    <kbase name="rules.droolsTest.Discount" packages="rules.droolsTest.Discount">
+        <ksession name="rulesSessionDiscount"/>
+    </kbase>
+    <kbase name="rules.droolsTest.Discount2" packages="rules.droolsTest.Discount2">
+        <ksession name="rulesSessionDiscount2"/>
+    </kbase>
+</kmodule>
