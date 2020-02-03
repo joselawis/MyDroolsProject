@@ -9,4 +9,7 @@
     <kbase name="rules.droolsTest.HelloWorld" packages="rules.droolsTest.HelloWorld">
         <ksession name="HelloWorldKS"/>
     </kbase>
+    <kbase name="rules.droolsTest.State" packages="rules.droolsTest.State">
+        <ksession name="StateKS"/>
+    </kbase>
 </kmodule>
