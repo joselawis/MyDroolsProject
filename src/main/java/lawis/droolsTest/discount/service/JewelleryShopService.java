@@ -1,6 +1,6 @@
-package lawis.droolsTest.service;
+package lawis.droolsTest.discount.service;
 
-import lawis.droolsTest.model.Product;
+import lawis.droolsTest.discount.model.Product;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.springframework.beans.factory.annotation.Autowired;

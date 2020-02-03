@@ -1,7 +1,7 @@
-package lawis.droolsTest.controller;
+package lawis.droolsTest.discount.controller;
 
-import lawis.droolsTest.model.Product;
-import lawis.droolsTest.service.JewelleryShopService;
+import lawis.droolsTest.discount.model.Product;
+import lawis.droolsTest.discount.service.JewelleryShopService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

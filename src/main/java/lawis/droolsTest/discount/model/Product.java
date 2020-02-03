@@ -1,4 +1,4 @@
-package lawis.droolsTest.model;
+package lawis.droolsTest.discount.model;
 
 public class Product {
 
