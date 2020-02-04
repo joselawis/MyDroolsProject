@@ -28,8 +28,7 @@ public class HelloWorldService {
         ksession.insert( message );
 
         //Leemos el archivo de reglas desde una planilla Excel
-        DroolsUtils.PrintDRL(getClass().getClassLoader(),
-                "rules/droolsTest/HelloWorld/HelloWorld.xls");
+        DroolsUtils.PrintDRL("rules/droolsTest/HelloWorld/HelloWorld.xls");
 
 //        ​and fire the rules
         ksession.fireAllRules();

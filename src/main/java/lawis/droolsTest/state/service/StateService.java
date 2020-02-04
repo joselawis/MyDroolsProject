@@ -37,8 +37,7 @@ public class StateService {
 
 
         //Leemos el archivo de reglas desde una planilla Excel
-        DroolsUtils.PrintDRL(getClass().getClassLoader(),
-                "rules/droolsTest/State/State.xls");
+        DroolsUtils.PrintDRL("rules/droolsTest/State/State.xls");
 
 //        ​and fire the rules
         ksession.fireAllRules();

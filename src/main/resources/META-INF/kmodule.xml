@@ -12,4 +12,7 @@
     <kbase name="rules.droolsTest.State" packages="rules.droolsTest.State">
         <ksession name="StateKS"/>
     </kbase>
+    <kbase name="rules.droolsTest.banking" packages="rules.droolsTest.banking">
+        <ksession name="bankingKS"/>
+    </kbase>
 </kmodule>
