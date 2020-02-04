@@ -25,17 +25,17 @@ public class DroolsUtils {
         System.out.println(drl);
     }
 
-    public static KieSession prepareRules(String[] ruleFiles, Object[] facts){
+    public static KieSession prepareRules(String[] ruleFiles, ResourceType resourceType, Object[] facts){
         InternalKnowledgeBase kbase = KnowledgeBaseFactory.newKnowledgeBase();
         KnowledgeBuilder kbuilder = KnowledgeBuilderFactory.newKnowledgeBuilder();
 
         for (String ruleFile : ruleFiles) {
             System.out.println("Loading file: " + ruleFile);
 
-            DroolsUtils.PrintDRL(ruleFile);
+            if(resourceType == ResourceType.DTABLE) DroolsUtils.PrintDRL(ruleFile);
             kbuilder.add(ResourceFactory.newClassPathResource(ruleFile,
                     RuleRunner.class),
-                    ResourceType.DTABLE);
+                    resourceType);
         }
 
         Collection pkgs = kbuilder.getKnowledgePackages();
