@@ -14,7 +14,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<droolsVersion>7.31.0.Final</droolsVersion>
+		<droolsVersion>7.32.0.Final</droolsVersion>
 	</properties>
 
 	<dependencies>
@@ -38,6 +38,11 @@
 			</exclusions>
 		</dependency>
 		<!-- DROOLS -->
+        <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-core</artifactId>
+            <version>${droolsVersion}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.drools</groupId>
 			<artifactId>drools-compiler</artifactId>
@@ -49,23 +54,23 @@
 			<version>${droolsVersion}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.kie</groupId>
-			<artifactId>kie-api</artifactId>
-			<version>${droolsVersion}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.drools</groupId>
-			<artifactId>drools-core</artifactId>
-			<version>${droolsVersion}</version>
-		</dependency>
-		<dependency>
 			<groupId>org.drools</groupId>
 			<artifactId>drools-decisiontables</artifactId>
 			<version>${droolsVersion}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.kie</groupId>
+			<artifactId>kie-api</artifactId>
+			<version>${droolsVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kie</groupId>
 			<artifactId>kie-ci</artifactId>
+			<version>${droolsVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.kie.server</groupId>
+			<artifactId>kie-server-client</artifactId>
 			<version>${droolsVersion}</version>
 		</dependency>
     </dependencies>
